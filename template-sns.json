@@ -14,7 +14,7 @@
 		   "Properties" : {
 			  "DisplayName" : { "Ref" : "SnsTopicName" },
 			  "Subscription" : [ {
-				  "Endpoint" : "er.sushilg@gmail.com",
+				  "Endpoint" : "er.sushilg11@gmail.com",
 				  "Protocol" : "email"
 				} ],
 			  "TopicName" : { "Ref" : "SnsTopicName" }
