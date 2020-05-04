@@ -1,0 +1,25 @@
+{
+	"AWSTemplateFormatVersion" : "2010-09-09",
+	"Description" : "Creates Lambda Function",
+	"Parameters": {
+		"SnsTopicName" : {
+			"Type" : "String",
+			"Default" : "MySNSTopic",
+			"Description" : "Type Acual name of SNS Topic here.."
+		}
+	},
+	"Resources" : {
+		"SnsResource" : {
+		   "Type" : "AWS::SNS::Topic",
+		   "Properties" : {
+			  "DisplayName" : { "Ref" : "SnsTopicName" },
+			  "Subscription" : [ {
+				  "Endpoint" : "er.sushilg@gmail.com",
+				  "Protocol" : "email"
+				} ],
+			  "TopicName" : { "Ref" : "SnsTopicName" }
+			}
+		  }
+		  
+		}
+	}
